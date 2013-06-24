@@ -73,6 +73,12 @@ int frb_setrelay( ftdirelayboard_t * frb, unsigned short idx )
     return err;
 }
 
+/**
+ * @brief frb_unsetrelay
+ * @param frb
+ * @param idx
+ * @return
+ */
 int frb_unsetrelay( ftdirelayboard_t * frb, unsigned short idx )
 {
     unsigned char tmp;
@@ -95,6 +101,10 @@ int frb_unsetrelay( ftdirelayboard_t * frb, unsigned short idx )
     return err;
 }
 
+/**
+ * @brief frb_close
+ * @param frb
+ */
 void frb_close( ftdirelayboard_t * frb )
 {
     if ( frb && frb->context )
@@ -106,6 +116,12 @@ void frb_close( ftdirelayboard_t * frb )
     }
 }
 
+/**
+ * @brief main
+ * @param argc
+ * @param argv
+ * @return
+ */
 int main ( int argc, char ** argv )
 {
     ftdirelayboard_t frb;
