@@ -19,7 +19,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#include <ftdi.h>
+#include <libftdi1/ftdi.h>
 
 typedef struct {
     struct ftdi_context * context;
